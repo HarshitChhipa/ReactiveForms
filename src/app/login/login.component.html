@@ -1,0 +1,29 @@
+<form [formGroup]="myForm">
+  <mat-form-field>
+    <input matInput
+           formControlName="email"
+           placeholder="Please Enter Email">
+  </mat-form-field>
+  <h4> Cell Phone</h4>
+  <mat-form-field>
+    <div formGroup="cellPhone">
+      <input placeholder="Please Enter Email"
+             formControlName="area"
+             matInput>
+    </div>
+  </mat-form-field>
+  <mat-form-field>
+    <input formControlName="prefix" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <input formControlName="line" matInput>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput
+           formControlName="message"
+           placeholder="Please Enter Message">
+  </mat-form-field>
+  <br/>
+  <button mat-button type="submit">Click me!</button>
+</form>
