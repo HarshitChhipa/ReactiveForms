@@ -11,7 +11,6 @@ export class LoginComponent implements OnInit {
   loading = false;
   success = false;
 
-
   constructor(private fb: FormBuilder) {
   }
 
